@@ -1,6 +1,6 @@
 package com.example.testapi
 
 data class StatusLed(
-    val led1: String,
-    val led2: String
+    val led1: Boolean,
+    val led2: Boolean
 )

@@ -11,7 +11,7 @@ interface ApiInterface {
     @GET("data/all")
     fun getData(): Call<MyDataItem>
 
-
+    @FormUrlEncoded
     @PUT("data/update/1")
     fun putData(@Body data: MyDataItem): Call<MyDataItem>
 }

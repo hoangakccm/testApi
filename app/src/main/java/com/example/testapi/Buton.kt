@@ -1,6 +1,6 @@
 package com.example.testapi
 
 data class Buton(
-    val freq: String,
-    val status: String
+    val freq: Int,
+    val status: Boolean
 )
