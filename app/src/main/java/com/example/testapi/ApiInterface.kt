@@ -1,17 +1,17 @@
 package com.example.testapi
 
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.GET
-import retrofit2.http.PUT
+import retrofit2.http.*
 
 
 interface ApiInterface {
-    @GET("data/all")
+
+    @GET("data")
     fun getData(): Call<MyDataItem>
 
-    @FormUrlEncoded
-    @PUT("data/update/1")
-    fun putData(@Body data: MyDataItem): Call<MyDataItem>
+    @PUT("data")
+    fun putData(@Body myDataItem: MyDataItem): Call<MyDataItem>
+
+    @POST("update")
+    fun postData(@Body myDataItem: MyDataItem): Call<MyDataItem>
 }

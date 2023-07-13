@@ -1,9 +1,10 @@
 package com.example.testapi
 
 data class MyDataItem(
-    val Buton: Buton,
-    val id: String,
-    val myLocation: MyLocation,
-    val statusLed: StatusLed,
-    val fileUpdate: String
+    var Button: Boolean,
+    var id: String,
+    var myLocation: MyLocation,
+    var Led1: Led,
+    var Led2: Led,
+    var fileUpdate: String
 )
